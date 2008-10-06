@@ -1,0 +1,18 @@
+<fieldset>  
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title, :class => 'big'  %>
+  </p>  
+
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description, :class => 'fat', :rows => 3  %>
+  </p>
+</fieldset>
+
+<fieldset>
+  <p>
+    <%= f.label :from_email, 'Email address to send mail from' %>
+    <%= f.text_field :from_email, :class => 'big'  %>
+  </p>
+</fieldset>

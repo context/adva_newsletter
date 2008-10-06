@@ -1,0 +1,10 @@
+<%= render :partial => "action_nav" %>
+
+<% form_for :newsletter, @newsletter, :url => newsletter_path(@site, @newsletter), :html => { :id => 'newsletter_form', :method => :put } do |f| %>
+  <%= render :partial => 'form', :locals => {:f => f} %>
+
+  <p class="buttons">
+    <%= submit_tag 'Update newsletter info' %> or
+    <%= link_to 'Cancel', newsletters_path(@site) %>
+  </p>
+<% end -%>

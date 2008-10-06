@@ -1,0 +1,11 @@
+<div style="width: 100%;">
+  <h1><%= h newsletter.title %></h1>
+  <p><%= h newsletter.description %></p>
+  <p>Sent to: <%= newsletter.to_email %></p>
+  <p>
+    <%= link_to('Edit infos', edit_newsletter_path(newsletter.site, newsletter)) %> |
+    <%= link_to('Manage subscriptions', edit_newsletter_path(newsletter.site, newsletter)) %> |
+    <%= link_to('Manage messages', edit_newsletter_path(newsletter.site, newsletter)) %>
+  </p>
+</div>
+

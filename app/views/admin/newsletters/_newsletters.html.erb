@@ -1,0 +1,10 @@
+<% if @newsletters.any? %>
+  <div id="recent-assets" class="assets-row">
+    <%= render :partial => 'newsletter', :collection => @newsletters %>
+  </div>
+<% else %>
+  <div class="empty" style="margin: 20px;">
+    You don't have any newsletters for this website. 
+    <%= link_to 'Create a new one &raquo;', :action => 'new' %>
+  </div>
+<% end %>
