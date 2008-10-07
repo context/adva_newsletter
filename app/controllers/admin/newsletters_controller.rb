@@ -1,5 +1,5 @@
 class Admin::NewslettersController < Admin::BaseController
-  before_filter :set_newsletter, :onyl => [:edit, :update, :destroy]
+  before_filter :set_newsletter, :only => [:edit, :update, :destroy]
   
   def index
     @newsletters = Newsletter.find(:all, :conditions => {:site_id => @site.id})

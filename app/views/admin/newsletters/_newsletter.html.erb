@@ -4,8 +4,8 @@
   <p>Sent to: <%= newsletter.to_email %></p>
   <p>
     <%= link_to('Edit infos', edit_newsletter_path(newsletter.site, newsletter)) %> |
-    <%= link_to('Manage subscriptions', edit_newsletter_path(newsletter.site, newsletter)) %> |
-    <%= link_to('Manage messages', edit_newsletter_path(newsletter.site, newsletter)) %>
+    <%= link_to('Manage subscriptions', newsletter_subscriptions_path(newsletter.site, newsletter)) %> |
+    <%= link_to('Manage messages', newsletter_messages_path(newsletter.site, newsletter)) %>
   </p>
 </div>
 
